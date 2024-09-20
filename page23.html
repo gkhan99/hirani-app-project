@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Request</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .message-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+        }
+        h1 {
+            color: #0044cc;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .back-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .back-btn:hover {
+            background-color: #45a049;
+        }
+        .update-options select, .update-options input {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="message-box">
+        <h1>Update Request</h1>
+        <p>Make changes to the client request. This will send an automatic email to both the Client and Inspector.</p>
+
+        <div class="update-options">
+            <label for="action">Select Action:</label>
+            <select id="action">
+                <option value="reschedule">Change Dates</option>
+                <option value="cancel">Cancel Request</option>
+                <option value="modify">Other Modifications</option>
+            </select>
+
+            <label for="new-dates">Select New Dates (if applicable):</label>
+            <input type="date" id="new-dates">
+
+            <button class="submit-btn" onclick="alert('Request Updated. An automatic email has been sent.')">Submit Update</button>
+        </div>
+
+        <button class="back-btn" onclick="window.location.href='page2.html'">Back to Admin Portal</button>
+    </div>
+
+</body>
+</html>

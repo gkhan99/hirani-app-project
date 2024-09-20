@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .header {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            margin-bottom: 10px;
+            border-radius: 50%;
+        }
+        .logo img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        h1 {
+            color: #0044cc;
+            font-size: 24px;
+            margin: 5px 0;
+        }
+        .logout-container {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+        .logout-btn {
+            background-color: white;
+            color: #4CAF50;
+            border: 2px solid white;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .logout-btn:hover {
+            background-color: #45a049;
+            color: white;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        table tr:hover {
+            background-color: #ddd;
+        }
+        table a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        table a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo and Title Section -->
+    <div class="header">
+        <div class="logo">
+            <!-- Placeholder for Logo -->
+            <img src="111.png" alt="Hirani Logo" />
+        </div>
+        <h1>HIRANI ENGINEERING AND LAND SURVEYING ADMIN PORTAL</h1>
+    </div>
+
+    <!-- Logout Button -->
+    <div class="logout-container">
+        <button class="logout-btn" onclick="window.location.href='index.html'">Logout</button>
+    </div>
+
+    <!-- Client Requests Table -->
+    <h2>Client Requests</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Sr. No.</th>
+                <th>Client Name</th>
+                <th>Timestamp</th>
+                <th>Project ID</th>
+                <th>Request Type</th>
+                <th>Inspector</th>
+                <th>Update</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>ABC Constructions</td>
+                <td>12/09/2024 14:35</td>
+                <td>PRJ-001</td>
+                <td>Cancellation</td>
+                <td>Gak</td>
+                <td><a href="page21.html">Update</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>NY Buildings</td>
+                <td>13/09/2024 10:25</td>
+                <td>PRJ-002</td>
+                <td>Modification</td>
+                <td>Gak</td>
+                <td><a href="page22.html">Update</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>PP Contractors</td>
+                <td>14/09/2024 16:40</td>
+                <td>PRJ-003</td>
+                <td>New Request</td>
+                <td>None</td>
+                <td><a href="page23.html">Update</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Inspector Schedule Table -->
+    <h2>Inspector Schedule</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Sr. No.</th>
+                <th>Inspector Name</th>
+                <th>Client</th>
+                <th>Dates</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Gak</td>
+                <td>ABC Constructions</td>
+                <td>12/09/2024 - 16/09/2024</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Gak</td>
+                <td>NY Buildings</td>
+                <td>17/09/2024 - 22/09/2024</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sak</td>
+                <td>None</td>
+                <td>Not Assigned</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

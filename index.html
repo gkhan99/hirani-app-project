@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Demo App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+        h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        h3 {
+            font-size: 18px;
+            margin: 0;
+            font-weight: normal;
+        }
+        .login-container {
+            display: flex;
+            justify-content: space-around;
+            width: 60%;
+            margin-bottom: 20px;
+        }
+        .login-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 40%;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .input-box {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        .input-box input {
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-btn:hover {
+            background-color: #45a049;
+        }
+        p {
+            text-align: center;
+            font-style: italic;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Logo and Title -->
+    <header>
+        <div class="logo">
+            <!-- Placeholder for Logo -->
+            <img src="111.png" alt="Hirani Logo" style="width: 100%; height: 100%; border-radius: 50%;" />
+        </div>
+        <h1>HIRANI ENGINEERING AND LAND SURVEYING</h1>
+        <h3>Client Portal: Inspections</h3>
+    </header>
+
+    <div class="login-container">
+        <!-- Client Login -->
+        <div class="login-box">
+            <h2>I am a Client</h2>
+            <div class="input-box">
+                <label for="client-username">Username</label>
+                <input type="text" id="client-username" value="username">
+            </div>
+            <div class="input-box">
+                <label for="client-password">Password</label>
+                <input type="password" id="client-password" value="password">
+            </div>
+            <button class="login-btn" onclick="window.location.href='page1.html'">Login</button>
+        </div>
+
+        <!-- Hirani Admin Login -->
+        <div class="login-box">
+            <h2>I am a Hirani Admin</h2>
+            <div class="input-box">
+                <label for="admin-username">Username</label>
+                <input type="text" id="admin-username" value="username">
+            </div>
+            <div class="input-box">
+                <label for="admin-password">Password</label>
+                <input type="password" id="admin-password" value="password">
+            </div>
+            <button class="login-btn" onclick="window.location.href='page2.html'">Login</button>
+        </div>
+    </div>
+
+    <p>Just a static demo app to show how the real interface should look like</p>
+
+</body>
+</html>
